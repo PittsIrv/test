@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Home Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+        }
+
+        h1 {
+            color: #333;
+            text-align: center;
+            margin-top: 50px;
+        }
+
+        p {
+            color: #666;
+            text-align: center;
+            font-size: 18px;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+            text-align: center;
+            margin-top: 30px;
+        }
+
+        li {
+            display: inline-block;
+            margin-right: 10px;
+        }
+
+        li a {
+            display: block;
+            padding: 10px 20px;
+            background-color: #337ab7;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+
+        li a:hover {
+            background-color: #23527c;
+        }
+    </style>
+</head>
+<body>
+    <h1>Welcome to the Home Page</h1>
+    <p>Hello.</p>
+    <ul>
+        <li><a href="{{ signup_url }}">Sign Up</a></li>
+        <li><a href="{{ login_url }}">Login</a></li>
+    </ul>
+</body>
+</html>
+

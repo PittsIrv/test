@@ -1,0 +1,29 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Dashboard</title>
+    <!-- 在这里可以引入样式表和其他外部资源 -->
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Profile</a></li>
+            <li><a href="#">Settings</a></li>
+            <li><a href="{% url 'logout' %}">Logout</a></li>
+        </ul>
+    </nav>
+
+    <div class="data-display">
+        <h1>Welcome to the Dashboard</h1>
+        <p>This is the content of the dashboard page.</p>
+        <!-- 在这里可以展示其他数据和内容 -->
+    </div>
+
+    <!-- 在这里可以添加其他HTML元素和内容 -->
+
+    <script src="{% static 'js/script.js' %}"></script>
+</body>
+</html>
