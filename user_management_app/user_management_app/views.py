@@ -75,9 +75,13 @@ def dashboard(request):
     user = request.user
     return render(request, 'dashboard.html', {'user': user})
 
-
 class CustomLogoutView(LogoutView):
     template_name = 'logout.html'
 
+def user_profile(request):
+    return render(request, 'user_profile.html')
+
+def password_change(request):
+    return render(request, 'password_change.html')
 
 
