@@ -37,10 +37,10 @@ AUTHENTICATION_BACKENDS = [
 # Email config
 EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
 EMAIL_HOST = 'smtp.163.com'
-EMAIL_PORT = 25
+EMAIL_PORT = 465
 EMAIL_HOST_USER = '13240161955@163.com'
 EMAIL_HOST_PASSWORD = 'PALSIHAUKMPYBPXC'
-EMAIL_USE_TLS = False
+EMAIL_USE_TLS = True
 # EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
 
 
